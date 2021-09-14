@@ -1,0 +1,298 @@
+/*===========
+LATO Google Font
+===========*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+
+/*========
+Global Css
+==========*/
+body{
+	font-family: 'Lato', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Lato', sans-serif;
+}
+ul{
+	padding: 0;
+}
+ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+
+/*================
+Hero Section Start
+==================*/
+.header{
+	padding: 0;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+.hero-section{
+	background: url(../img/hero-sec.png) no-repeat center top;
+	background-size: cover;
+	padding: 175px 0 100px;
+	text-align: center;
+}
+.hero-section h1{
+    font-size: 100px;
+    font-weight: 600;
+    color: #fff;
+}
+.title-border{
+	width: 65%;
+    height: 2px;
+    background: #15a4fa;
+    margin: 0 auto;
+}
+.hero-section p{
+	color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 35px;
+}
+.hero-btn{
+	border: 1px solid #15a4fa;
+    background: transparent;
+    padding: 10px 40px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 45px;
+    border-radius: 3px;
+    transition: 0.5s ease-in-out;
+}
+.hero-btn:hover{
+	background: #15a4fa;
+}
+.hero-section .fa{
+	margin-top: 100px;
+    color: #fff;
+    font-size: 45px;
+}
+
+/*==================
+Degign Section Start
+==================*/
+.design-section{
+	background: #f6f9f9;
+}
+.design-top{
+	padding: 75px 0;
+	text-align: center;
+}
+.design-top p{
+	color: #999999;
+}
+.design-bottom{
+	background: #fff;
+	padding: 75px 0;
+}
+.design-box{
+	text-align: center;
+}
+.design-icon{
+	position: relative;
+	width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    background: #eee;
+    z-index:1;
+}
+.design-icon::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+    height: 100%;
+    background: #48baff;
+    z-index: -1;
+}
+.design-icon::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+    height: 100%;
+    background: #5fc3ff;
+    z-index: -1;
+}
+.design-icon .fa{
+	width: 100px;
+    height: 100px;
+	font-size: 70px;
+    color: #fff;
+    line-height: 100px;
+    
+}
+.design-box h4{
+	padding: 15px 0;
+}
+.design-box p{
+	color: #999999;
+}
+
+/*====================
+Portfolio Section Start
+=====================*/
+.portfolio-section{
+	background: #f6f9f9;
+	padding: 75px 0;
+}
+.portfolio-section h2{
+	text-align: center;
+}
+.portfolio-section p{
+	text-align: center;
+	color: #999999;
+}
+.portfolio-gallery{
+	margin-top: 35px;
+}
+.img-box{
+	position: relative;
+}
+.g-img{
+	margin: 15px 0;
+	width: 100%;
+	display: block;
+}
+.icon{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:100%;
+	background: rgba(44,172,247,0.6);
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.5s ease-in-out;
+	opacity: 0;
+}
+.icon .fa{
+	color: #fff;
+	width: 55px;
+    height: 55px;
+    border: 1px solid#fff;
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 55px;
+    margin: 0 5px;
+}
+
+.icon:hover{
+	opacity: 1;
+}
+
+/*====================
+Contact Section Start
+=====================*/
+.contact-section{
+	background: url(../img/stay-with-us.png) no-repeat center;
+	background-size: cover;
+	padding: 75px 0;
+}
+.contact-section h1{
+	font-size: 48px;
+	text-align: center;
+	color: #fff;
+}
+.contact-section p{
+	text-align: center;
+	color: #999999;
+}
+form{
+	margin-top: 50px;
+}
+.contact-section .form-control{
+	border: 1px solid #999999;
+    border-radius: 5px;
+    background: transparent;
+    font-size: 18px;
+    color: #fff;
+}
+.ctn-input{
+	height: 60px;
+}
+.chkbox{
+	margin-top: 30px;
+}
+.form-check-label{
+	color: #fff;
+	padding-left: 10px;
+}
+.btn-send{
+	color: #fff;
+	float: right;
+    border: 1px solid #15a4fa;
+    margin-top: 30px;
+    padding: 10px 50px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+}
+.btn-send:hover{
+	color: #fff;
+	background:#15a4fa; 
+}
+.form-control:focus {
+    box-shadow: none;
+}
+
+/*====================
+Footer Section Start
+=====================*/
+footer{
+	padding: 30px 0;
+	background: #f6f9f9;
+}
+footer h6{
+	padding-top: 30px;
+	color: #999999;
+}
+.footer-shere ul{
+	text-align: right;
+}
+.footer-shere ul li{
+	list-style: none;
+    display: inline;
+    /*float: right;*/
+}
+.footer-shere .fa{
+	width: 55px;
+    height: 55px;
+    margin: 0 5px;
+    line-height: 55px;
+    font-size: 30px;
+    text-align: center;
+    background: #15a4fa;
+    color: #fff;
+}
+
+/*=======================
+Mobile Device Media Query
+========================*/
+@media (min-width: 320px) and (max-width: 576px){
+	.navbar-toggler:focus {box-shadow: none;}
+	.navbar-light .navbar-nav .nav-link {text-align: center;}
+	.hero-section {padding: 75px 0 75px;}
+	.hero-section h1 {font-size: 80px;}
+	.chkbox {margin-top: 0px; text-align: center;}
+	.btn-send {float: none; display: block;margin: 0 auto;}
+	footer {padding: 0px 0 30px;}
+	footer h6 { text-align: center;}
+	.footer-shere ul {text-align: center;padding-top: 15px;}
+}
